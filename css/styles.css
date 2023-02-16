@@ -1,5 +1,6 @@
 :root{
     --clr-back:#2B2D42;
+    --clr-black:#27293a;
     --clr-gry:#555b64;
     --clr-font:#EDF2F4;
 }
@@ -33,9 +34,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-left: 2.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     border-bottom:solid 1px var(--clr-gry);
+    background-color: var(--clr-black);
 }
 
 .nav{
@@ -45,7 +47,7 @@ header{
 }
 
 .nav li a{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: color .3s;
     text-transform: lowercase;
 }
@@ -56,12 +58,13 @@ header{
 }
 
 .nav li a::after{
-    content: ">";
+    content: "/>";
     transition: color .2s, transform .1s .2s;
     display: inline-block;
+    color: var(--clr-gry);
 }
 .nav li a:hover::after{
-    color: var(--clr-gry);
+    color: var(--clr-font);
     transform: translateX(.5rem);
     
 }
@@ -70,9 +73,10 @@ header{
     content: "<";
     display: inline-block;
     transition: color .2s, transform .1s .2s;
+    color: var(--clr-gry);
 }
 .nav li a:hover::before{
-    color: var(--clr-gry);
+    color: var(--clr-font);
     transform: translateX(-.5rem);
 }
 
