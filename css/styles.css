@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
 :root{
     --clr-back:#2B2D42;
     --clr-black:#27293a;
     --clr-gry:#555b64;
     --clr-font:#EDF2F4;
     --clr-font-:#d1d3d4;
+    --type-font-nav: 'Roboto Mono', monospace;
+    --type-font-title: 'Roboto Slab', serif;
 }
 
 *{
@@ -49,6 +54,7 @@ header{
     display: flex;
     gap: 2rem;
     margin-right: 2.5rem;
+    font-family: var(--type-font-nav);
 }
 
 .nav li a{
@@ -89,6 +95,23 @@ header{
 
 
 /* HERO */
+@keyframes scroll-icon {
+    0% {
+        transform: translateY(0) translateX(-50%);
+    }
+    75% {
+        transform: translateY(-1rem) translateX(-50%);
+    }
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}
 
 .secHero{
     height: 100vh;
@@ -102,29 +125,52 @@ header{
 }
 
 .hero{
+    min-height: 100vh;
+    padding-block: 1rem;
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
 .desc p{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--clr-font-);
+    font-family:var(--type-font-title);
+    font-weight: 200;
 }
+
 
 h1{
-    font-size: 2rem;
+    font-size: 4.5rem;
     color: var(--clr-font);
-}
-
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: var(--type-font-title);
+    font-weight: 500;
 }
 
 .desc{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    gap: 2.5rem;
+    
+}
+
+.mouse-scrolling{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: var(--clr-gry);
+    animation-name: scroll-icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 2, 2);
+    animation-delay: 0;
+    animation-direction: normal;
+    transition: .3s;
+}
+
+.bi-mouse{
+    font-size:2.5rem;
 }
