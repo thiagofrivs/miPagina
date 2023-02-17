@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
 
 :root{
+scroll-behavior: smooth;
+
     --clr-back:#2B2D42;
     --clr-black:#27293a;
     --clr-gry:#555b64;
     --clr-font:#EDF2F4;
     --clr-font-:#d1d3d4;
+    --clr-blue-font:rgb(90, 90, 247);
     --type-font-nav: 'Roboto Mono', monospace;
     --type-font-title: 'Roboto Slab', serif;
+    --type-font-subtitle: 'Roboto Slab', serif;
 }
 
 *{
@@ -64,7 +69,7 @@ header{
 }
 
 .nav li a:hover{
-    color:rgb(90, 90, 247);
+    color:var(--clr-blue-font);
 
 }
 
@@ -135,7 +140,7 @@ header{
 .desc p{
     font-size: 2.5rem;
     color: var(--clr-font-);
-    font-family:var(--type-font-title);
+    font-family:var(--type-font-subtitle);
     font-weight: 200;
 }
 
@@ -173,4 +178,59 @@ h1{
 
 .bi-mouse{
     font-size:2.5rem;
+}
+
+
+/* About */
+
+.section-title{
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--type-font-nav);
+    color: var(--clr-font);
+    gap: .5rem;
+    transition: .3s;
+}
+
+.section-title::before{
+    font-family: var(--type-font-title);
+    content: '<';
+    color: var(--clr-gry);
+    font-size: 3rem;
+    transition: .1s;
+}
+.section-title::after{
+    font-family: var(--type-font-title);
+    content: '>';
+    color: var(--clr-gry);
+    font-size: 3rem;
+    transition: .1s;
+}
+
+.section-title:hover::before{
+    
+    transform: translateX(-.5rem);
+}
+
+.section-title:hover::after{
+    
+    transform: translateX(.5rem);
+}
+
+
+.paragraph{
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+    color: var(--clr-font);
+}
+
+.paragraph-mini{
+    font-size: .75rem;
+}
+.paragraph-mini a{
+    color: var(--clr-blue-font);
+    text-decoration:underline;
 }
