@@ -23,9 +23,8 @@
         <nav>
             <ul class="nav">
                 <li><a href="#about">Sobre mí</Sobre></a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +33,7 @@
         <section class="secHero">
             <div class="container">
                 <div class="hero">
-                    <div class="foto">
+                    <div class="rellax-not-centered foto"  data-rellax-speed="4">
                         <img src="img/yo.jpg" alt="">
                     </div>
                     
@@ -44,7 +43,7 @@
                             <h1>Thiago Santamaria</h1>
                         </div>
                     
-                        <div class="minidesc"><p>Desarrollador Web</p></div>
+                        <div class="minidesc"><p>Desarrollador Frontend</p></div>
                         
                         <div class="mouse-scrolling">
                             <i class="bi bi-mouse"></i>
@@ -59,9 +58,9 @@
             
         </section>
 
-        <section id="about" class="about">
+        <section id="about" class="section about">
             <div class="container">
-                <h2 class="section-title">Sobre mí</h2>
+                <h2 class="rellax section-title" data-rellax-speed="1" >Sobre mí</h2>
 
                 <div class="paragraph">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor veniam, dolore, alias iste necessitatibus placeat nulla totam magnam, vero labore rerum? Vero dicta sed ex in molestias enim sunt deleniti libero aut sint culpa eum impedit quaerat fuga, voluptatibus esse ab eveniet, debitis quis officiis ullam! Aliquid officia maxime, quo fugit, ab repellat omnis a magnam ullam animi ducimus cumque quia harum. Neque non nulla, qui commodi eos aut, doloribus nemo omnis quae eveniet temporibus libero tenetur aspernatur veniam nam repellendus voluptatem! Fugiat a, distinctio facilis perferendis ipsum provident nihil eos quam reiciendis sequi ad sint neque, optio sunt non.</p>
@@ -73,8 +72,109 @@
                     <p>Perfil de <a href="#">LinkedIn</a></p>
                 </div>
 
+                <div class="section-footer">
+                    <p>Sobre mí</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section porfolio" id="portfolio">
+            <div class="container">
+                <h2 class="rellax section-title" data-rellax-speed="1">Portfolio</h2>
+                <p class="paragraph">Aquí mostraré los proyectos en los que trabajé y estoy trabajando.</p>
+                <div class="project-list">
+                    <article class="project">
+                        <div class="project-icons">
+                            <ion-icon name="folder-outline"></ion-icon>
+                            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                            <a href=""><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 class="project-title">Proyecto 1</h3>
+                        <p>Descripcion</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">Skill1</li>
+                            <li class="skill">Skill2</li>
+                        </ul>
+                    </article>
+                    <article class="project">
+                        <div class="project-icons">
+                            <ion-icon name="folder-outline"></ion-icon>
+                            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                            <a href=""><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 class="project-title">Proyecto 2</h3>
+                        <p>Descripcion</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">Skill1</li>
+                            <li class="skill">Skill2</li>
+                        </ul>
+                    </article>
+                    <article class="project">
+                        <div class="project-icons">
+                            <ion-icon name="folder-outline"></ion-icon>
+                            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                            <a href=""><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 class="project-title">Proyecto 3</h3>
+                        <p>Descripcion</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">Skill1</li>
+                            <li class="skill">Skill2</li>
+                        </ul>
+                    </article>
+                    <article class="project">
+                        <div class="project-icons">
+                            <ion-icon name="folder-outline"></ion-icon>
+                            <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                            <a href=""><ion-icon name="link-outline"></ion-icon></a>
+                        </div>
+                        <h3 class="project-title">Proyecto 4</h3>
+                        <p>Descripcion</p>
+                        <ul class="skills-list project-skills">
+                            <li class="skill">Skill1</li>
+                            <li class="skill">Skill2</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="section-footer">
+                    <p>portfolio</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="rellax section-title" data-rellax-speed="1">Contacto</h2>
+                <p class="paragraph">Mi bandeja de entrada está siempre abierta para consultas. ¡No dudes en escribirme y te responderé lo antes posible!</p>
+                <p class="paragraph">Envíame un mail a <a href="mailto:thiagosantamaria01@gmail.com">thiagosantamaria01@gmail.com</a></p>
+                <section class="section-footer section-contact">
+                    <p>Contacto</p>
+                </section>
             </div>
         </section>
     </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer-inner">
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/thiago-santamaria/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <p>Thiago Santamaria</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Rellax -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax', { center: true });
+        var rellaxNotCentered = new Rellax('.rellax-not-centered'); 
+    </script>
+    <!-- Ion Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
