@@ -281,6 +281,12 @@ h1{
     content: '>';
 }
 
+.skill-title{
+    font-size: 1.5rem;
+    color: var(--clr-font-light);
+    font-weight: 900;
+}
+
 .skills-list{
     margin-top: 1rem;
     display: flex;
@@ -289,8 +295,23 @@ h1{
     gap: 1rem;
     column-gap: 1rem;
     row-gap: .5rem;
+    margin-top: 2rem;
 }
 
+
+.skill{
+    background-color: var(--clr-back);
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    border: 1px solid var(--clr-gry);
+    transition: .2s;
+    color: var(--clr-font);
+    font-family: var(--type-font-paragraph);
+}
+
+.skill:hover{
+    border: 1px solid var(--clr-blue-font);
+}
 
 /* portfolio */
 
@@ -342,18 +363,7 @@ h1{
     margin-top: 1.4rem;
 }
 
-.skill{
-    background-color: var(--clr-back);
-    padding: .5rem .75rem;
-    border-radius: .25rem;
-    border: 1px solid var(--clr-gry);
-    transition: .2s;
-    color: var(--clr-font);
-}
 
-.skill:hover{
-    border: 1px solid var(--clr-blue-font);
-}
 
 .project:hover{
     border: 1px solid var(--clr-blue-font);
@@ -428,11 +438,21 @@ footer{
     transform: translateY(-2rem);
 }
 
-  /* Personalizar */
-.toTop {
+
+
+.whatsapp {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+    position: fixed; 
+    left: 1rem; 
+    bottom: 1rem; 
+    z-index: 9999;
     background-color: #252525;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     padding: 0.75rem;
     color: var(--clr-font);
 }
+
