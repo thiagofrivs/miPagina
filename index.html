@@ -21,19 +21,22 @@
             </a>
         </div>
         <nav>
-            <ul class="nav">
-                <li><a href="#about">Sobre mí</Sobre></a></li>
+            <button class="open-menu" id="open-menu"><i class="bi bi-list"></i></button>
+            <ul class="nav ">
+                <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contacto</a></li>
+                <button class="close-menu hidden" id="close-menu"><i class="bi bi-x-lg"></i></button>
             </ul>
         </nav>
+        
     </header>
     
     <main>
         <section class="secHero">
             <div class="container">
                 <div class="hero">
-                    <div class="rellax-not-centered foto"  data-rellax-speed="4">
+                    <div class=" foto"  >
                         <img src="img/yo.jpg" alt="">
                     </div>
                     
@@ -60,7 +63,7 @@
 
         <section id="about" class="section about">
             <div class="container">
-                <h2 class="rellax section-title" data-rellax-speed="1" >Sobre mí</h2>
+                <h2 class="section-title"  >Sobre mí</h2>
 
                 <div class="paragraph">
                     <p>Soy Thiago Santamaria y tengo 21 años. Realicé varios cursos en la plataforma de <strong>CoderHouse</strong>, donde aprendí a manejar <strong>HTML , CSS y Javascript</strong>, junto con varias librerías.</p>
@@ -81,7 +84,7 @@
                     <li class="skill">Bootstrap</li>
                     <li class="skill">Git</li>
                     <li class="skill">Github</li>
-                    <li class="skill">SASS</li>
+                    <li class="skill">SASS y SCSS</li>
                     <li class="skill">Fetch API</li>
                     <li class="skill">Diseño Responsive</li>
                     <li class="skill">JSON</li>
@@ -109,7 +112,7 @@
 
         <section class="section porfolio" id="portfolio">
             <div class="container">
-                <h2 class="rellax section-title" data-rellax-speed="1">Portfolio</h2>
+                <h2 class=" section-title" >Portfolio</h2>
                 <p class="paragraph">Aquí mostraré los proyectos en los que trabajé y estoy trabajando.</p>
                 <div class="project-list">
                     <article class="project">
@@ -166,7 +169,7 @@
 
         <section id="contact" class="section contact">
             <div class="container">
-                <h2 class="rellax section-title" data-rellax-speed="1">Contacto</h2>
+                <h2 class=" section-title" >Contacto</h2>
                 <p class="paragraph">Mi bandeja de entrada está siempre abierta para consultas. ¡No dudes en escribirme y te responderé lo antes posible!</p>
                 <p class="paragraph">Envíame un mail a <a href="mailto:thiagosantamaria01@gmail.com">thiagosantamaria01@gmail.com</a></p>
                 <section class="section-footer section-contact">
@@ -193,12 +196,7 @@
     <a href="https://wa.me/541124077486" target="_blank" class="whatsapp" id="whatsapp"><ion-icon name="logo-whatsapp"></ion-icon></a>
 
 
-    <!-- Rellax -->
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-    <script>
-        var rellax = new Rellax('.rellax', { center: true });
-        var rellaxNotCentered = new Rellax('.rellax-not-centered'); 
-    </script>
+    
     
     <!-- Ion Icon -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -206,7 +204,8 @@
 
     <!-- OWN -->
     
-    <script src="js/botonWpp.js"></script> 
+    
     <script src="js/botonArriba.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

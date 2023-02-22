@@ -66,6 +66,7 @@ header{
 
 .nav{
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-right: 2.5rem;
     font-family: var(--type-font-nav);
@@ -105,6 +106,18 @@ header{
     transform: translateX(-.5rem);
 }
 
+
+.open-menu,.close-menu{
+    background-color: var(--clr-gry);
+    border: none;
+    font-size: 2rem;
+    position: relative;
+    z-index: 200;
+    display: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 2rem;
+}
 
 
 
@@ -255,6 +268,17 @@ h1{
 .paragraph-mini a{
     color: var(--clr-blue-font);
     text-decoration:underline;
+}
+
+.paragraph a::after{
+    content: "\f1c5";
+    font-family: bootstrap-icons;
+    line-height: 1;
+    vertical-align: -.125em;
+    font-size: .65em;
+    margin-left: .25em;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .section-footer{
@@ -456,3 +480,74 @@ footer{
     color: var(--clr-font);
 }
 
+.hidden{
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width:700px){
+    .hidden{
+        display: block;
+    }
+
+    
+
+    .nav{
+        width: 45%;
+        height: 100vh;
+    }
+
+    .open-menu,.close-menu{
+        display: flex;
+    }
+
+    .nav {
+        position: fixed;
+        inset: 0;
+        right: auto;
+        background-color: var(--clr-back);
+        border-right: 1px solid var(--clr-gray);
+        /* box-shadow: 0 0 0 100vmax var(--clr-bg-90); */
+        flex-direction: column;
+        z-index: 999;
+        padding: 2rem 0 2rem 2rem;
+        transform: translateX(-300%);
+        transition: transform .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .nav.visible {
+        transform: translateX(0);
+    }
+
+    .nav li a{
+        font-size: 1rem;
+    }
+
+    .hidden-mobile{
+        display: none;
+    }
+    
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mouse-scrolling{
+        display: none;
+    }
+
+    .project-list{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+    }
+
+    .desc p{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
