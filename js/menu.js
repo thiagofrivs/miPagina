@@ -18,5 +18,6 @@ closeMenu.addEventListener("click",(e)=>{
 menuItems.forEach(item => {
     item.addEventListener("click", () => {
         menu.classList.remove("visible");
+        openMenu.classList.remove("hidden-mobile")
     })
 })

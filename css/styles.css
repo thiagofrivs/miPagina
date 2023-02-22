@@ -108,7 +108,7 @@ header{
 
 
 .open-menu,.close-menu{
-    background-color: var(--clr-gry);
+    background-color: transparent;
     border: none;
     font-size: 2rem;
     position: relative;
@@ -506,9 +506,8 @@ footer{
         position: fixed;
         inset: 0;
         right: auto;
-        background-color: var(--clr-back);
-        border-right: 1px solid var(--clr-gray);
-        /* box-shadow: 0 0 0 100vmax var(--clr-bg-90); */
+        background-color: var(--clr-black);
+        border-right: 2px solid black;
         flex-direction: column;
         z-index: 999;
         padding: 2rem 0 2rem 2rem;
@@ -534,9 +533,7 @@ footer{
         justify-content: center;
     }
 
-    .mouse-scrolling{
-        display: none;
-    }
+    
 
     .project-list{
         display: flex;
