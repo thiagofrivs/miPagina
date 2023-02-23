@@ -37,7 +37,7 @@
         <section class="secHero">
             <div class="container">
                 <div class="hero">
-                    <div class=" foto"  >
+                    <div class="rellax foto" data-rellax-speed="1" >
                         <img src="img/yo.jpg" alt="">
                     </div>
                     
@@ -64,7 +64,7 @@
 
         <section id="about" class="section about">
             <div class="container">
-                <h2 class="section-title"  >Sobre mí</h2>
+                <h2 class="section-title rellax" data-rellax-speed="-1" >Sobre mí</h2>
 
                 <div class="paragraph">
                     <p>Soy Thiago Santamaria y tengo 21 años. Realicé varios cursos en la plataforma de <strong>CoderHouse</strong>, donde aprendí a manejar <strong>HTML , CSS y Javascript</strong>, junto con varias librerías.</p>
@@ -113,7 +113,7 @@
 
         <section class="section porfolio" id="portfolio">
             <div class="container">
-                <h2 class=" section-title" >Portfolio</h2>
+                <h2 class="rellax section-title" data-rellax-speed="1">Portfolio</h2>
                 <p class="paragraph">Aquí mostraré los proyectos en los que trabajé y estoy trabajando.</p>
                 <div class="project-list">
                     <article class="project">
@@ -170,7 +170,7 @@
 
         <section id="contact" class="section contact">
             <div class="container">
-                <h2 class=" section-title" >Contacto</h2>
+                <h2 class="rellax section-title" data-rellax-speed="1">Contacto</h2>
                 <p class="paragraph">Mi bandeja de entrada está siempre abierta para consultas. ¡No dudes en escribirme y te responderé lo antes posible!</p>
                 <p class="paragraph">Envíame un mail a <a href="mailto:thiagosantamaria01@gmail.com">thiagosantamaria01@gmail.com</a></p>
                 <section class="section-footer section-contact">
@@ -183,9 +183,11 @@
     <footer class="main-footer">
         <div class="container">
             <div class="main-footer-inner">
-                <a href="https://wa.me/541124077486" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                <a href="" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-                <a href="https://www.linkedin.com/in/thiago-santamaria/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <div class="icons">
+                    <a href="https://wa.me/541124077486" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/thiago-santamaria/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
                 <p>Thiago Santamaria</p>
             </div>
         </div>
@@ -203,7 +205,11 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
+    <!-- Rellax -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax',{ center:true }); 
+    </script>
 
     <!-- OWN -->
     <script src="js/botonArriba.js"></script>
