@@ -167,7 +167,8 @@ header{
     padding-block: 1rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: .1rem;
+    
 }
 
 .desc p{
