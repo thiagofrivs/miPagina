@@ -279,7 +279,8 @@ h1{
 }
 
 .paragraph-mini{
-    font-size: .75rem;
+    margin-top: 1rem;
+    font-size: 1rem;
 }
 .paragraph-mini a{
     color: var(--clr-blue-font);
