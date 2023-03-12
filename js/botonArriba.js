@@ -1,5 +1,5 @@
 const toTop = (() => {
-    let button = document.getElementById("toTop");
+    let button = document.querySelector("#toTop");
     window.onscroll = () => {
         button.classList[
         (document.documentElement.scrollTop > 200) ? "add" : "remove"
