@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiago Santamaria</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
@@ -26,9 +29,15 @@
         <nav>
             <button class="open-menu" id="open-menu"><i class="bi bi-list"></i></button>
             <ul class="nav ">
-                <li><a href="#about">About me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="link">About me</a></li>
+                <li><a href="#portfolio" class="link">Portfolio</a></li>
+                <li><a href="#contact" class="link">Contact</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-tooltip="Change Idioms" data-tooltip-left>English</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../index.html">Spanish</a></li>
+                    </ul>
+                </li>
                 <button class="close-menu hidden" id="close-menu"><i class="bi bi-x-lg"></i></button>
             </ul>
         </nav>
@@ -127,8 +136,8 @@
                     <article class="project">
                         <div class="project-icons">
                             <ion-icon name="folder-outline"></ion-icon>
-                            <a href="https://github.com/thiagofrivs/proyecto" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-                            <a href="https://thiagofrivs.github.io/proyecto/" target="_blank"><ion-icon name="link-outline"></ion-icon></a>
+                            <a href="https://github.com/thiagofrivs/proyecto" target="_blank" data-tooltip="See Repository" data-tooltip-bottom><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://thiagofrivs.github.io/proyecto/" target="_blank" data-tooltip="See Deploy" data-tooltip-bottom><ion-icon name="link-outline"></ion-icon></a>
                         </div>
                         <h3 class="project-title">PC Components Store</h3>
                         <p>Basic components store</p>
@@ -144,8 +153,8 @@
                     <article class="project">
                         <div class="project-icons">
                             <ion-icon name="folder-outline"></ion-icon>
-                            <a href="https://github.com/thiagofrivs/MYSconsultores" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-                            <a href="https://thiagofrivs.github.io/MYSconsultores/" target="_blank"><ion-icon name="link-outline"></ion-icon></a>
+                            <a href="https://github.com/thiagofrivs/MYSconsultores" target="_blank" data-tooltip="See Repository" data-tooltip-bottom><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://thiagofrivs.github.io/MYSconsultores/" target="_blank" data-tooltip="See deploy" data-tooltip-bottom><ion-icon name="link-outline"></ion-icon></a>
                         </div>
                         <h3 class="project-title">MYS Consultores</h3>
                         <p>Landing page for an accounting firm</p>
@@ -157,8 +166,8 @@
                     <article class="project">
                         <div class="project-icons">
                             <ion-icon name="folder-outline"></ion-icon>
-                            <a href="https://github.com/thiagofrivs/miPagina" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-                            <a href="https://thiagosantamaria.com"><ion-icon name="link-outline"></ion-icon></a>
+                            <a href="https://github.com/thiagofrivs/miPagina" target="_blank" data-tooltip="See Repository" data-tooltip-bottom><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://thiagosantamaria.com" data-tooltip="See deploy" data-tooltip-bottom><ion-icon name="link-outline"></ion-icon></a>
                         </div>
                         <h3 class="project-title">MI Portfolio</h3>
                         <p>This page is my personal portfolio</p>
@@ -195,7 +204,7 @@
             <div class="main-footer-inner">
                 <div class="icons">
                     <a href="https://wa.me/541124077486" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                    <a href="" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+
                     <a href="https://www.linkedin.com/in/thiago-santamaria/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
                 </div>
                 <p>Thiago Santamaria</p>
@@ -204,9 +213,9 @@
     </footer>
 
 
-    <a id="toTop" class="toTop" href="#" data-tooltip="Cambiar a español" data-tooltip-left=""><ion-icon name="arrow-up-outline" ></ion-icon></a>
+    <a id="toTop" class="toTop" href="#" data-tooltip="Go top" data-tooltip-left=""><ion-icon name="arrow-up-outline" ></ion-icon></a>
 
-    <a href="../" id="button-lenguaje"  data-tooltip="Cambiar a español" data-tooltip-buttom class="translate-link"> <i class="bi bi-translate"></i></a>
+    
 
 
     
@@ -220,6 +229,9 @@
     <script>
         var rellax = new Rellax('.rellax',{ center:true }); 
     </script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!-- OWN -->
     <script src="../js/botonArriba.js"></script>

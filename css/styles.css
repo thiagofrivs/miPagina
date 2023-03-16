@@ -76,40 +76,59 @@ header{
     gap: 2rem;
     margin-right: 2.5rem;
     font-family: var(--type-font-nav);
+    align-items: center;
 }
 
-.nav li a{
+.nav li a.link{
     font-size: 1.5rem;
     transition: color .3s;
     text-transform: lowercase;
 }
 
-.nav li a:hover{
+.nav li a.link:hover{
     color:var(--clr-blue-font);
 
 }
 
-.nav li a::after{
+.nav li a.link::after{
     content: ">";
     transition: color .2s, transform .1s .2s;
     display: inline-block;
     color: var(--clr-gry);
 }
-.nav li a:hover::after{
+.nav li a.link:hover::after{
     color: var(--clr-font);
     transform: translateX(.5rem);
     
 }
 
-.nav li a::before{
+.nav li a.link::before{
     content: "<";
     display: inline-block;
     transition: color .2s, transform .1s .2s;
     color: var(--clr-gry);
 }
-.nav li a:hover::before{
+.nav li a.link:hover::before{
     color: var(--clr-font);
     transform: translateX(-.5rem);
+}
+
+.dropdown-toggle{
+    font-size: 1.25rem;
+}
+
+.dropdown-menu{
+    background-color: var(--clr-gry);
+    color: var(--clr-font);
+}
+
+.dropdown-item{
+    color: var(--clr-font);
+}
+
+.dropdown-item:hover{
+    background-color: var(--clr-gry);
+    color: var(--clr-font);
 }
 
 
@@ -501,7 +520,6 @@ footer{
     border-radius: .25rem;
     position: absolute;
     bottom: 100%;
-    left: 50%;
     transform: translateX(-50%) translateY(2rem);
     opacity: 0;
     visibility: hidden;
@@ -541,20 +559,26 @@ footer{
     }
 }
 
+.translate-box{
+    background-color: var(--clr-gry);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+    padding: .5rem;
+}
+.translate-box:hover{
+    box-shadow: 2px 2px  2px 2px rgba(0, 0, 0, .8);
+}
+
 .translate-link {
     border: none;
-    display: flex;
     cursor: pointer;
-    transition: opacity 0.3s, transform 0.3s;
-    position: fixed; 
-    left: 2.2rem; 
-    bottom: 1rem; 
     z-index: 9999;
-    background-color: #252525;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 0.75rem;
     color: var(--clr-font);
+    
+    
 }
 
 .hidden{

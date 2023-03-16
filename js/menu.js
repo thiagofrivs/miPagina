@@ -1,7 +1,7 @@
 const menu=document.querySelector(".nav")
 const openMenu=document.querySelector("#open-menu")
 const closeMenu=document.querySelector("#close-menu")
-const menuItems=document.querySelectorAll(".nav > li")
+const menuItems=document.querySelectorAll(".nav > li > .link")
 
 openMenu.addEventListener("click",(e)=>{
     menu.classList.add("visible")
